@@ -1,0 +1,82 @@
+.btn{
+
+    &:link, 
+    &:visited {
+        display: inline-block;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-radius: 10rem;
+        transition: 0.2s;
+        padding: $default-font-size 4rem;
+        font-size: $default-font-size;
+    }
+    &--white{ 
+        background-color: $color-white;
+    }
+
+    
+    &:hover{
+        transform: translateY(-0.5rem);
+        box-shadow: 0 1rem 2rem rgba($color-black,0.2);
+    }
+
+    &:active{
+        transform: translateY(-0.1rem);
+        box-shadow: 0 0.5rem 1rem rgba($color-black,0.2);
+    }
+
+    &--header {
+        animation: moveInBtn 1s ease-out .75s;
+    }
+
+    &--card{
+        padding: 1rem 2rem !important;
+    }
+}
+
+.btn-text{
+    &:link,
+    &:visited{
+        color: $color-primary;
+        font-size: $default-font-size;
+        letter-spacing: 0.2rem;
+        padding-bottom: 0.3rem;
+        text-decoration: none;
+        display: inline-block;
+        background-color: $color-primary;
+        color: $color-white;
+        border-radius: 1rem;
+        padding: 0.5rem;
+               
+    }
+    &:hover{
+        background-color: $color-primary-dark;
+        color: $color-white;
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        transform: translateY(-0.5rem);
+    }
+    &:active{
+        box-shadow: 0 .5rem 2rem rgba($color-black, .15);
+        transform: translateY(0.1rem);
+    }
+
+}
+
+.btn-image{
+    &:link,
+    &:visited{
+        text-decoration: none;
+        display: inline-block;
+               
+    }
+    &:hover{
+        box-shadow: 20px 20px 50px $color-grey-light;
+        transform: translateY(-0.5rem);
+        border-radius: 20px;
+        
+    }
+    &:active{
+        box-shadow: 0 .5rem 2rem;
+        transform: translateY(0.1rem);
+    }
+}

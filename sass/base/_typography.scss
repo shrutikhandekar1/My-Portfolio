@@ -1,0 +1,131 @@
+body {
+    font-family: "Lato", san-serif;
+    font-weight: 400;
+    /* font-size: 16px; */
+    line-height: 1.7;
+    color: $color-dark-grey;
+    padding: 3rem;
+}
+
+.heading-primary {
+    color: $color-white;
+    text-transform: capitalize;
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+
+  
+    &--main {
+        display: block;
+        font-size: 5rem;
+        font-weight: 400;
+        letter-spacing: 3.5rem;
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-delay: 1s;
+        animation-timing-function: ease-out;
+    }
+
+    &--sub {
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1.75rem;
+        animation: moveInRight 1s ease-out;
+        animation-delay: 1s;
+    }
+}
+
+.heading-secondary {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $color-medium-green;
+    text-align: center;
+}
+
+.heading-tertiary{
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph{
+    font-size: 1.6rem;
+
+    &:not(:last-child){
+        margin-bottom: 3rem;
+    }
+}
+
+.logo-img{
+    height: 8rem;
+
+    &:not(:last-child){
+        padding-right: 20px;
+    }
+}
+
+
+.skills-heading{
+    margin-bottom: 5rem;
+    color: $color-white;
+}
+
+.skills__box{
+     background-color: rgba($color-white, 0.8);
+     height: 25rem;
+     font-size: 1.5rem; 
+     padding: 1.5rem 0; 
+     border-radius: 3px;
+     text-align: center;
+     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+     
+     &:hover{
+         transform: translateY(-1.5rem) scale(1.03);
+     }
+}
+
+#skills__icon{
+    font-size: 4.8rem;
+}
+
+.portfolio-card{
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    border: 2px solid $color-black;
+    text-align: center;
+    font-size: 1.5rem;
+    position: relative;
+    transition: all .5s;
+
+    &__img{
+        width: 80%;
+        background-color: white;    
+    }
+    &__title{
+        font-size: 3rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        display:inline-block;
+        position: absolute;
+        top: 9rem;
+        left: 12rem;
+        line-height: normal;
+        background-color: rgba($color-dark-grey, 0.3);
+        color: $color-white;
+    }
+
+    &__name{
+        font-size: 2.0rem;
+    }
+
+    &__side{
+        background-color: orangered;
+        color: $color-white;
+        transition: all .5s;
+    }
+    &:hover &__side{
+        transform: rotateY(180deg);
+        
+        background-color: green;
+    }
+}
