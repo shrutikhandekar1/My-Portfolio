@@ -9,6 +9,7 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
         <script src="https://kit.fontawesome.com/yourcode.js"></script>
         <title>Natours | Exciting tours for adventurous people</title>
     </head>
@@ -21,10 +22,10 @@
             <div class="navigation__background">&nbsp;</div>
             <nav class="navigation__nav">
                 <ul class="navigation__list">
-                    <li class="navigation__items"><a href="#" class="navigation__link">About Me</a></li>
+                    <li class="navigation__items"><a href="#about" class="navigation__link">About Me</a></li>
                     <li class="navigation__items"><a href="#" class="navigation__link">Resume</a></li>
-                    <li class="navigation__items"><a href="#" class="navigation__link">Skills Set</a></li>
-                    <li class="navigation__items"><a href="#" class="navigation__link">My Portfolios</a></li>
+                    <li class="navigation__items"><a href="#skills" class="navigation__link">Skills Set</a></li>
+                    <li class="navigation__items"><a href="#portfolios" class="navigation__link">My Portfolios</a></li>
                 </ul>
             </nav>        
         </div>
@@ -38,7 +39,7 @@
             </div>           
         </header>
         <main>
-            <section class="section-about">
+            <section class="section-about" id="about">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
                         Front end focused with <br> full stack experience
@@ -48,15 +49,16 @@
                         <div class="col-1-of-2">
                             <h3 class="heading-tertiary u-margin-bottom-small">Motivated to produce results</h3>
                             <p class="paragraph">
-                                Completed a Masters-level Web develpment certificate course at SDSU. 
-                                Also a tenacious self-taight programmer.I use
-                                continuous iteration to produce results
-                                quickly and continuously work on improving products
+                                Highly motivated recent graduate with Advanced Certificate in Web and Mobile
+                                Application Development (GPA of 3.26), with many years of prior experience as Sr.
+                                Quality Assurance Engineer at large companies. Mature and dedicated professional
+                                with training in design principles and programming languages, seeking opportunity
+                                in Web Application Development and Testing or Quality Assurance.
                             </p class="paragraph">
                             <h3 class="heading-tertiary u-margin-bottom-small">An agile collaborator</h3>
                             <p class="paragraph">
-                               I have worked at large companies like Sun Microsystems
-                               and Oracle and strived hard to improve the quality of
+                               I have worked at large companies like Oracle and Sun Microsystems
+                               and strived hard to improve the quality of
                                the products. I have worked through the entire SDLC 
                                process and have closely communicated with team members
                                to achieve the best results for software quality. 
@@ -75,7 +77,7 @@
                         </div>
                     </div>              
             </section>
-            <section class="section-skills">
+            <section class="section-skills" id="skills">
                 <h2 class="heading-secondary skills-heading">
                     Skills Set
                 </h2>
@@ -132,18 +134,19 @@
                                 <div class="card__side--front-img card__side--front-img-1">
                                     &nbsp;
                                 </div>
-                                <h2 class="card__side--front-title"><span class="card__side--front-title-span card__side--front-title-span--1">Booking Service</span></h2>
+                                <h2 class="card__side--front-title"><span class="card__side--front-title-span card__side--front-title-span--1">Product Inventory</span></h2>
                                 <ul>
-                                    <li>HTML</li>
-                                    <li>CSS3</li>
-                                    <li>Javascript</li>
-                                    <li>React</li>
+                                    <li>HTML/CSS</li>
+                                    <li>React JS</li>
+                                    <li>Express JS</li>
+                                    <li>Mongo DB</li>
                                 </ul>
                             </div>
                             
                             <div class="card__side card__side--back">
-                                <p class="card__side--back-desc">A backend booking system that handles 150req/sec</p>
-                                <a href="#" class="btn btn--white btn--card">Source Code</a>
+                                <p class="card__side--back-desc">An app that creates, updates and deletes products in a database.</p>
+                                <a href="https://github.com/shrutikhandekar1/ProductInventoryApp" class="btn btn--white btn--card btn--prodInven">Source Code</a>
+                                <a href="https://github.com/shrutikhandekar1/ProductInventoryApp" class="btn btn--white btn--card btn--prodInven">Live Project</a>
                             </div>
                         </div>
                     </div>
@@ -203,6 +206,7 @@
             </ul>
         </footer>
     </body>
+    <script src="js/app.js"></script>
 </html>
             
 
